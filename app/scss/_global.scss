@@ -52,9 +52,9 @@ a {
 }
 
 .title {
+  @include f700;
   text-align: center;
   color: $bg;
-  font-weight: 700;
   font-size: 36px;
   line-height: 60px;
   margin-bottom: 30px;
