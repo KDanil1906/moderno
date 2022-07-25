@@ -30,7 +30,7 @@
                         <a class="header__phone" href="tel:61383766284">+61 3 8376 6284</a>
                     </div>
                     <div class="header__box">
-                        <div class="notification__box">
+                        <div class="notification__box header__btn-login--off">
                             <a class="notification header__circle active icon-bell-o" href="#"><span>8</span></a>
                             <div class="circle__menu notification__menu">
                                 <a href="#" class="circle__item icon-bell-o icons-color">
@@ -39,24 +39,24 @@
                                         <div class="circle__info-theme">WordPress</div>
                                         <div class="circle__info-date">01 Dec, 2016</div>
                                     </div>
-                                </ф>
-                                <a href="#" class="circle__item icon-bell-o icons-color">
-                                    <img class="circle__images" src="./images/contant/user3.jpg" alt="">
-                                    <div class="circle__info">
-                                        <div class="circle__info-theme">WordPress</div>
-                                        <div class="circle__info-date">01 Dec, 2016</div>
-                                    </div>
-                                </a>
-                                <a href="#" class="circle__item icon-bell-o">
-                                    <img class="circle__images" src="./images/contant/user3.jpg" alt="">
-                                    <div class="circle__info">
-                                        <div class="circle__info-theme">WordPress</div>
-                                        <div class="circle__info-date">01 Dec, 2016</div>
-                                    </div>
-                                </a>
+                                    </ф>
+                                    <a href="#" class="circle__item icon-bell-o icons-color">
+                                        <img class="circle__images" src="./images/contant/user3.jpg" alt="">
+                                        <div class="circle__info">
+                                            <div class="circle__info-theme">WordPress</div>
+                                            <div class="circle__info-date">01 Dec, 2016</div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="circle__item icon-bell-o">
+                                        <img class="circle__images" src="./images/contant/user3.jpg" alt="">
+                                        <div class="circle__info">
+                                            <div class="circle__info-theme">WordPress</div>
+                                            <div class="circle__info-date">01 Dec, 2016</div>
+                                        </div>
+                                    </a>
                             </div>
                         </div>
-                        <div class="message__box">
+                        <div class="message__box header__btn-login--off">
                             <a class="message header__circle active icon-envelope-o" href="#"><span>5</span></a>
                             <div class="circle__menu message__menu">
                                 <a href="#" class="circle__item icon-envelope-o icons-color">
@@ -116,8 +116,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="user__box">
-                            <a class="user" href="#">
+                        <div class="user__box ">
+                            <a class="user header__btn-login--off" href="#">
                                 <div class="user__inner">
                                     <div class="user__images">
                                         <img src="./images/contant/user2.jpg" alt="">
@@ -143,19 +143,26 @@
                                 </ul>
                             </div>
                         </div>
-                        <a class="header__btn header__btn-login header__btn-login--off" href="">Login</a>
-                        <a class="header__btn header__btn-logout header__btn-logout--on" href="">Logout</a>
-                        <a class="header__btn header__btn-register header__btn-login--off" href="">Register</a>
+                        <a class="header__btn header__btn-login" data-fancybox data-src="#modal"
+                            href="javascript:;">Login</a>
+                        <a class="header__btn header__btn-logout header__btn-logout--off" href="">Logout</a>
+                        <a class="header__btn header__btn-register" href="">Register</a>
                     </div>
+                    <div class="header__btn-menu icon-user"></div>
                 </div>
             </div>
         </div>
         <div class="header__menu">
             <div class="container">
                 <nav class="menu">
+                    <div class="menu__btn">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                     <ul class="menu__list">
                         <li>
-                            <a href="#">
+                            <a href="./new-items.html">
                                 Home
                             </a>
                         </li>
@@ -986,7 +993,7 @@
         <div class="footer__content">
             <div class="container">
                 <div class="footer__inner">
-                    <div class="footer__col">
+                    <div class="footer__col footer__col-address">
                         <div class="footer__col-title">About Company</div>
                         <div class="footer__col-text">
                             Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim digniSuspen disse.Fusce sit
@@ -1060,7 +1067,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="footer__col">
+                    <div class="footer__col footer__col-social">
                         <div class="footer__col-title">Follow Us On</div>
                         <ul class="footer__social-link">
                             <li><a class="link-facebook" href="#"></a></li>
@@ -1090,6 +1097,28 @@
             </div>
         </div>
     </footer>
+
+    <div id="modal">
+        <div class="login__wrapper">
+            <div class="login__title">
+                Login
+            </div>
+            <form action="" class="login__form">
+
+                <label for="" class="login__label-name">
+                    <input type="text" placeholder="Name" required>
+                </label>
+
+                <label for="" class="login__label-pass">
+                    <input type="text" placeholder="Password" required>
+                </label>
+
+                <button type="submit">submit</button>
+                <a class="create-acc" href="#">Creat An Account?</a>
+                <a class="lost-pass" href="#">Lost Password?</a>
+            </form>
+        </div>
+    </div>
 
 
     <script src="./js/libs.min.js"></script>
