@@ -2303,3 +2303,163 @@
 
 
 // profile-details.html end
+// start upload
+
+.upload__inner {
+  background-color: #fff;
+  border: 1px solid #7d7d7d;
+  margin-bottom: 110px;
+
+  button {
+    color: #fff;
+    background-color: $green;
+    border: none;
+    padding: 15px 36px;
+    margin-left: 175px;
+    cursor: pointer
+  }
+}
+
+.upload__inner-title {
+  @include f500;
+  font-size: 24px;
+  padding: 16px 35px 18px;
+  color: $bg;
+  border-bottom: 1px solid #7d7d7d;
+  margin-bottom: 40px;
+}
+
+.upload__inner-content {
+  margin-bottom: 30px;
+  padding-left: 45px;
+  padding-right: 50px;
+}
+
+.upload-line {
+  margin-bottom: 25px;
+  display: flex;
+
+  label {
+    min-width: 175px;
+    padding-right: 15px;
+    color: #444;
+    padding-top: 5px;
+
+    span {
+      color: $green;
+    }
+
+    &::placeholder {
+      color: #707070;
+    }
+  }
+
+  select,
+  input,
+  textarea {
+    width: 100%;
+    display: block;
+    border: 1px solid #7d7d7d;
+    height: 40px;
+    background-color: #f9f9f9;
+    padding: 0 18px;
+  }
+
+  textarea {
+    height: 150px;
+    resize: none;
+    padding: 8px 18px;
+  }
+
+  .jq-selectbox {
+    width: 100%;
+  }
+
+  .jq-selectbox__select {
+    height: 40px;
+    padding: 0 18px;
+    border: 1px solid #7d7d7d;
+    border-bottom-color: #7d7d7d;
+    border-radius: 0px;
+    background: #f9f9f9;
+    box-shadow: none;
+    font-family: 'Roboto-Regular', sans-serif;
+    color: #707070;
+    text-shadow: none;
+    line-height: 40px;
+  }
+
+  .jq-selectbox__trigger {
+    border-left: none;
+  }
+
+  .jq-selectbox__trigger-arrow {
+    border: none;
+    font-size: 15px;
+    right: 20px;
+    top: 0;
+    line-height: 40px;
+    border-left: none;
+
+    &::before {
+      content: "\f0d7";
+      font-family: "icomoon";
+    }
+  }
+
+  input[type="file"] {
+    outline: none;
+  }
+
+  .jq-selectbox__dropdown {
+    top: 40px !important;
+  }
+
+  .jq-file {
+    width: 100%;
+    border-radius: 0px;
+    box-shadow: none;
+    height: 40px;
+    padding: 0 18px;
+    border: 1px solid #7d7d7d;
+    padding: 0 18px;
+  }
+
+  .jq-file__name {
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    border: none;
+    border-bottom-color: transparent;
+    border-radius: 0px;
+    background: transparent;
+    box-shadow: none;
+    font-size: 12px;
+    color: #707070;
+    margin-left: 100px;
+
+  }
+
+  .jq-file__browse {
+    top: 5px;
+    right: auto;
+    left: 9px;
+    // padding: 0 10px;
+    line-height: 26px;
+    border-left: none;
+    border-radius: 0;
+    background: #fff;
+    box-shadow: none;
+    text-shadow: none;
+    font-size: 12px;
+    color: #444;
+    padding: 0px 12px;
+    border: 1px solid #7d7d7d;
+  }
+
+
+}
+
+// end upload

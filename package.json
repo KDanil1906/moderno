@@ -27,5 +27,8 @@
     "rateyo": "^2.3.5",
     "sass": "^1.49.9",
     "slick-carousel": "^1.8.1"
+  },
+  "dependencies": {
+    "jquery-form-styler": "^2.0.2"
   }
 }
