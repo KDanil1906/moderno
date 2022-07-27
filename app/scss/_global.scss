@@ -8,10 +8,16 @@ html {
   box-sizing: inherit;
 }
 
+html, body {
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   // Общепринятые правила для скрола на мелких экаранах 
-  overflow-x: hidden;
+  // overflow-x: hidden;
   min-width: 320px;
   font-family: 'Roboto-Regular', sans-serif;
   font-weight: 400;
@@ -77,4 +83,8 @@ a {
     color: $green;
     font-size: 14px;
   }
+}
+
+#modal {
+  display: none;
 }
